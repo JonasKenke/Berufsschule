@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Bankautomat
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int[] blocklist = new int[] { 9999, 8888, 7777, 6666, 5555, 4444, 3333, 2222, 1111, 0000 };
             int avalibleMoney = 3000;
-            Boolean below1k = false;
+            Boolean below1K;
             int pin = 1234;
             while (avalibleMoney >= 1000)
             {
@@ -22,18 +19,18 @@ namespace Bankautomat
                 if (avalibleMoney < 2000)
                 {
                     Console.WriteLine("Sie können nur 1000 abheben.");
-                    below1k = true;
+                    below1K = true;
 
                 }
                 else
                 {
                     Console.WriteLine("Sie können maximal 2000 abheben.");
-                    below1k = false;
+                    below1K = false;
                 }
                 int betrag = Convert.ToInt32(Console.ReadLine());
                 if (betrag > 2000)
                 {
-                    if (below1k == true)
+                    if (below1K)
                     {
                         Console.WriteLine("Sie können nur 1000 abheben.");
                     }
@@ -45,7 +42,7 @@ namespace Bankautomat
                     Console.Clear();
                     continue;
                 }
-                if (below1k == true && betrag > 1000)
+                if (below1K && betrag > 1000)
                 {
                     Console.WriteLine("Sie können nur 1000 abheben.");
                     Thread.Sleep(1000);
@@ -84,7 +81,7 @@ namespace Bankautomat
                         Console.Write("*");
                     }
 
-                    if (restart == true)
+                    if (restart)
                     {
                         restart = false;
                         fullstring = "";
@@ -116,9 +113,7 @@ namespace Bankautomat
                     {
                         trys++;
                         Console.WriteLine("\nFalsche PIN");
-                        continue;
                     }
-                    pinEingabe = 0;
                 }
                 while (trys < 3);
 
@@ -127,7 +122,6 @@ namespace Bankautomat
                     Console.WriteLine("Sie haben 3 mal die falsche PIN eingegeben. Karte wird eingezogen.");
                     Thread.Sleep(1000);
                     Console.Clear();
-                    continue;
                 }
 
             }
