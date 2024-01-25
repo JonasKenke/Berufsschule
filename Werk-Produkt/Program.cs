@@ -38,16 +38,16 @@
     
     class Werk
     {
-        private Produkt _produkt;
+        private Produkt produkt;
         
         public Werk(Produkt produkt)
         {
-            this._produkt = produkt;
+            this.produkt = produkt;
         }
         
         public double berechneUmsatz()
         {
-            return _produkt.Anzahl() * _produkt.Preis();
+            return produkt.Anzahl() * produkt.Preis();
         }
     }
     
