@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FirmaProdukt
+﻿namespace Werk_Produkt
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Firma firma = new Firma();
+            Firma f1 = new Firma();
 
-            Werk werk1 = new Werk(new Produkt("4 TiB Festplatte", 195.5, 7000));
-            Werk werk2 = new Werk(new Produkt("250 GiB SSD", 149.9, 6000));
+            Werk w1 = new Werk(new Produkt("4 TiB Festplatte", 195.5, 7000));
+            Werk w2 = new Werk(new Produkt("250 GiB SSD", 149.9, 6000));
             
-            firma.addWerk(werk1);
-            firma.addWerk(werk2);
-            Console.WriteLine(firma.berechneGesamtumsatz());
+            f1.addWerk(w1);
+            f1.addWerk(w2);
+            Console.WriteLine(f1.berechneGesamtumsatz());
             Console.ReadKey();
         }
     }
