@@ -11,7 +11,7 @@
             
             f1.addWerk(w1);
             f1.addWerk(w2);
-            Console.WriteLine(f1.berechneGesamtumsatz());
+            Console.WriteLine("Gesamtumsatz " + f1.berechneGesamtumsatz());
             Console.ReadKey();
         }
     }
