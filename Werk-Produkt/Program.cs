@@ -12,7 +12,6 @@
             f1.addWerk(w1);
             f1.addWerk(w2);
             Console.WriteLine("Gesamtumsatz " + f1.berechneGesamtumsatz());
-            Console.ReadKey();
         }
     }
 
@@ -47,29 +46,34 @@
         
         public double berechneUmsatz()
         {
-            return produkt.Anzahl() * produkt.Preis();
+            return produkt.getAnzahl() * produkt.getPreis();
         }
     }
     
     class Produkt
     {
-        private string produktName;
+        private string name;
         private double preis;
         private int anzahl;
         
-        public Produkt(string produktName, double produktPreis, int produktAnzahl)
+        public Produkt(string name, double produktPreis, int produktAnzahl)
         {
-            this.produktName = produktName;
+            this.name = name;
             this.preis = produktPreis;
             this.anzahl = produktAnzahl;
         }
+
+        public string getName()
+        {
+            return name;
+        }
         
-        public double Preis()
+        public double getPreis()
         {
             return preis;
         }
         
-        public int Anzahl()
+        public int getAnzahl()
         {
             return anzahl;
         }
