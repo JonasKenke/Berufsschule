@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werk-Produkt", "Werk-Produkt\Werk-Produkt.csproj", "{6C5BA8E4-5928-4388-80BF-78321A65CE8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigationsrichtung", "Navigationsrichtung\Navigationsrichtung.csproj", "{B719EB34-9E62-42C2-8421-9835D26C9745}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{6C5BA8E4-5928-4388-80BF-78321A65CE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C5BA8E4-5928-4388-80BF-78321A65CE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C5BA8E4-5928-4388-80BF-78321A65CE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B719EB34-9E62-42C2-8421-9835D26C9745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B719EB34-9E62-42C2-8421-9835D26C9745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B719EB34-9E62-42C2-8421-9835D26C9745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B719EB34-9E62-42C2-8421-9835D26C9745}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
