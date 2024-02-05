@@ -8,6 +8,7 @@
             Kunde k2 = new Kunde("Moritz", "Mustermann");
             Konto konto1 = new Konto(1000, 1);
             Konto konto2 = new Konto(2000, 2);
+
             
             k1.addKonto(konto1);
             k1.addKonto(konto2);
