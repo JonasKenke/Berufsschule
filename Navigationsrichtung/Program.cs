@@ -1,4 +1,6 @@
-﻿class Navigationsrichtungen
+﻿namespace Navigationsrichtung;
+
+class Navigationsrichtungen
 {
     internal class Program
     {
@@ -6,13 +8,10 @@
         {
             Kunde k1 = new Kunde("Max", "Mustermann");
             Kunde k2 = new Kunde("Moritz", "Mustermann");
-            Konto konto1 = new Konto(1000, 1);
-            Konto konto2 = new Konto(2000, 2);
+            Konto konto1 = new Konto(1000, 1, k1);
+            Konto konto2 = new Konto(2000, 2, k2);
             
-            k1.addKonto(konto1);
             k1.addKonto(konto2);
-            
-            k2.addKonto(konto1);
             
             Console.WriteLine("Kunde 1 hat folgende Konten: ");
             foreach (Konto konto in k1.getKonten())
@@ -87,12 +86,16 @@
     {
         private uint kontonummer;
         private double kontostand;
+        private Kunde inhaber;
         private List<Kunde> kunden = new List<Kunde>();
         
-        public Konto(double kontostand, uint kontonummer)
+        public Konto(double kontostand, uint kontonummer, Kunde inhaber)
         {
             this.kontostand = kontostand;
             this.kontonummer = kontonummer;
+            this.inhaber = inhaber;
+            
+            inhaber.addKonto(this);
         }
         
         public uint getKontonummer()
