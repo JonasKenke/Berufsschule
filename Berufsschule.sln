@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigationsrichtung", "Navi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Propertys", "Propertys\Propertys.csproj", "{D7261393-4D73-4043-81CB-0AF7EDF98F19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vererbung", "Vererbung\Vererbung.csproj", "{6EE1F83F-309F-4A33-AB99-D368F5A289EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{D7261393-4D73-4043-81CB-0AF7EDF98F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7261393-4D73-4043-81CB-0AF7EDF98F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7261393-4D73-4043-81CB-0AF7EDF98F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE1F83F-309F-4A33-AB99-D368F5A289EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE1F83F-309F-4A33-AB99-D368F5A289EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE1F83F-309F-4A33-AB99-D368F5A289EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE1F83F-309F-4A33-AB99-D368F5A289EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
