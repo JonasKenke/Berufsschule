@@ -4,69 +4,66 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Apprentice apprentice = new Apprentice("apprentice", "developer", "R101",
-            new List<ApprenticeVisitTime>
-            {
-                new ApprenticeVisitTime(new DateTime(2019, 8, 12), new DateTime(2019, 8, 30)),
-                new ApprenticeVisitTime(new DateTime(2019, 11, 11), new DateTime(2019, 11, 29))
-            });
-        
-        FulltimeEmployee fulltimeEmployee = new FulltimeEmployee("full-time employee", "developer", "R102");
-        
-        List<Employee> employees = new List<Employee> { apprentice, fulltimeEmployee };
-        foreach (Employee employee in employees)
+        var employee1 = new Apprentice("John", "senior dev", "G105", GetApprenticeVisitTimes());
+        var employee2 = new FullTimeEmployee("Hans", "junior dev", "G105");
+
+        var employees = new List<Employee> { employee1, employee2 };
+        foreach (var employee in employees)
         {
-            Console.WriteLine("ID: " + employee.getId()
-                                     + "\tName: " + employee.getName()
-                                     + "\tOccupation: " + employee.getJobTitle()
-                                     + "\tWorkplace: "
-                                     + employee.getWorkplace()
-            );
+            Console.WriteLine($"ID: {employee.GetId()}\tName: {employee.GetName()}\tOccupation: {employee.GetJobTitle()}\tWorkplace: {employee.GetWorkplace()}");
         }
-        Console.ReadKey();
+    }
+
+    private static List<ApprenticeVisitTime> GetApprenticeVisitTimes()
+    {
+        return
+        [
+            new ApprenticeVisitTime(new DateTime(2024, 7, 10), new DateTime(2024, 7, 20)),
+            new ApprenticeVisitTime(new DateTime(2024, 9, 11), new DateTime(2024, 9, 29))
+        ];
     }
 }
 
 abstract class Employee
 {
-    protected String id = Guid.NewGuid().ToString();
-    protected String name;
-    protected String JobTitle;
-    protected String Workplace;
-    
-    public Employee(String name, String JobTitle, String Workplace)
+    private readonly String id = Guid.NewGuid().ToString();
+    private readonly String name;
+    private readonly String jobTitle;
+    protected readonly String Workplace;
+
+    protected Employee(String name, String jobTitle, String workplace)
     {
         this.name = name;
-        this.JobTitle = JobTitle;
-        this.Workplace = Workplace;
+        this.jobTitle = jobTitle;
+        this.Workplace = workplace;
     }
     
-    public String getId()
+    public String GetId()
     {
         return id;
     }
     
-    public String getName()
+    public String GetName()
     {
         return name;
     }
     
-    public String getJobTitle()
+    public String GetJobTitle()
     {
-        return JobTitle;
+        return jobTitle;
     }
     
-    public abstract String getWorkplace();
+    public abstract String GetWorkplace();
 }
 
-class FulltimeEmployee : Employee
+class FullTimeEmployee : Employee
 {
-    public FulltimeEmployee(String name, String JobTitle, String Workplace) : base(name, JobTitle, Workplace)
+    public FullTimeEmployee(String name, String jobTitle, String workplace) : base(name, jobTitle, workplace)
     {
         
     }
     
-    public override String getWorkplace()
+    public override String GetWorkplace()
     {
         return Workplace;
     }
@@ -81,9 +78,9 @@ class ApprenticeVisitTime
         Start = start;
         End = end;
     }
-     
-    public DateTime Start { get; private set; }
-    public DateTime End { get; private set; }
+
+    private DateTime Start { get; }
+    private DateTime End { get; }
      
     public bool Includes(DateTime value)
     {
@@ -93,14 +90,14 @@ class ApprenticeVisitTime
 
 class Apprentice : Employee
 {
-    private List<ApprenticeVisitTime> dateTimes;
+    private readonly List<ApprenticeVisitTime> dateTimes;
     
-    public Apprentice(String name, String JobTitle, String Workplace, List<ApprenticeVisitTime> dateTimes) : base(name, JobTitle, Workplace)
+    public Apprentice(String name, String jobTitle, String workplace, List<ApprenticeVisitTime> dateTimes) : base(name, jobTitle, workplace)
     {
         this.dateTimes = dateTimes;
     }
     
-    public override String getWorkplace()
+    public override String GetWorkplace()
     {
         DateTime now = DateTime.Now;
         foreach (ApprenticeVisitTime dateTime in dateTimes)
