@@ -11,23 +11,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{BD769370-3542-41FD-82B4-2F63601971E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werk-Produkt", "Werk-Produkt\Werk-Produkt.csproj", "{6C5BA8E4-5928-4388-80BF-78321A65CE8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Werk-Produkt", "Werk-Produkt\Werk-Produkt.csproj", "{6C5BA8E4-5928-4388-80BF-78321A65CE8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigationsrichtung", "Navigationsrichtung\Navigationsrichtung.csproj", "{B719EB34-9E62-42C2-8421-9835D26C9745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigationsrichtung", "Navigationsrichtung\Navigationsrichtung.csproj", "{B719EB34-9E62-42C2-8421-9835D26C9745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Propertys", "Propertys\Propertys.csproj", "{D7261393-4D73-4043-81CB-0AF7EDF98F19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Propertys", "Propertys\Propertys.csproj", "{D7261393-4D73-4043-81CB-0AF7EDF98F19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vererbung", "Vererbung\Vererbung.csproj", "{6EE1F83F-309F-4A33-AB99-D368F5A289EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vererbung", "Vererbung\Vererbung.csproj", "{6EE1F83F-309F-4A33-AB99-D368F5A289EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime", "DateTime\DateTime.csproj", "{4D34D22D-F7D9-4DB0-92CC-E8E66DB30A6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTime", "DateTime\DateTime.csproj", "{4D34D22D-F7D9-4DB0-92CC-E8E66DB30A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{EA8112AF-46B4-4DD0-9582-919533B44691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{EA8112AF-46B4-4DD0-9582-919533B44691}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zwischenprüfung", "Zwischenprüfung", "{F9667CCD-1EEC-48F1-98C3-39097826A8ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tag1", "Tag1\Tag1.csproj", "{E3C25F45-E8F3-4FB9-860D-9838118E9E85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tag1", "Tag1\Tag1.csproj", "{E3C25F45-E8F3-4FB9-860D-9838118E9E85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{7EF228EA-E363-41D2-A81F-56ED87B664B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List", "List\List.csproj", "{7EF228EA-E363-41D2-A81F-56ED87B664B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{2912E208-2F59-4FB6-B259-9B3229C38656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +45,6 @@ Global
 		{3A17C5DB-F7DC-4D7C-ADC9-01D0F48744DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A17C5DB-F7DC-4D7C-ADC9-01D0F48744DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A17C5DB-F7DC-4D7C-ADC9-01D0F48744DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{186F90A2-9CB4-4FB8-8D62-75AF690065DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{186F90A2-9CB4-4FB8-8D62-75AF690065DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{186F90A2-9CB4-4FB8-8D62-75AF690065DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{186F90A2-9CB4-4FB8-8D62-75AF690065DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5F2C417-EDAE-4CF3-8FD1-5DB01096DDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5F2C417-EDAE-4CF3-8FD1-5DB01096DDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5F2C417-EDAE-4CF3-8FD1-5DB01096DDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,15 +85,20 @@ Global
 		{7EF228EA-E363-41D2-A81F-56ED87B664B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EF228EA-E363-41D2-A81F-56ED87B664B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EF228EA-E363-41D2-A81F-56ED87B664B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2912E208-2F59-4FB6-B259-9B3229C38656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2912E208-2F59-4FB6-B259-9B3229C38656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2912E208-2F59-4FB6-B259-9B3229C38656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2912E208-2F59-4FB6-B259-9B3229C38656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {98673F97-2498-4CA5-BAAE-99E4E30CD839}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E3C25F45-E8F3-4FB9-860D-9838118E9E85} = {F9667CCD-1EEC-48F1-98C3-39097826A8ED}
 		{7EF228EA-E363-41D2-A81F-56ED87B664B6} = {F9667CCD-1EEC-48F1-98C3-39097826A8ED}
+		{2912E208-2F59-4FB6-B259-9B3229C38656} = {F9667CCD-1EEC-48F1-98C3-39097826A8ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98673F97-2498-4CA5-BAAE-99E4E30CD839}
 	EndGlobalSection
 EndGlobal
