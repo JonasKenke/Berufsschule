@@ -4,23 +4,13 @@ namespace List
 {
     public class Kunde
     {
-        private string vorname;
-        private string nachname;
+        public string Vorname { get; set; }
+        public string Nachname { get; set; }
 
         public Kunde(string vorname, string nachname)
         {
-            this.vorname = vorname;
-            this.nachname = nachname;
-        }
-
-        public string getVorname()
-        {
-            return vorname;
-        }
-
-        public string getName()
-        {
-            return nachname;
+            Vorname = vorname;
+            Nachname = nachname;
         }
     }
 }

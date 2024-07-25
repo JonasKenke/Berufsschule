@@ -4,9 +4,9 @@ using System.IO;
 
 namespace List
 {
-    public class KundeDAO
+    public class KundeDAO : IKundeDAO
     {
-        private string filePath;
+        private readonly string filePath;
 
         public KundeDAO(string filePath)
         {
@@ -42,6 +42,21 @@ namespace List
             }
 
             return kunden;
+        }
+
+        public void AddKunde(Kunde kunde)
+        {
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(filePath, true))
+                {
+                    sw.WriteLine($"{kunde.Vorname},{kunde.Nachname}");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"The file could not be written: {e.Message}");
+            }
         }
     }
 }
